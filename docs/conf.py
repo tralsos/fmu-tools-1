@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-# ecl_hc_thickness documentation build configuration file, created by
-# sphinx-quickstart on Tue Jul  9 22:26:36 2013.
-#
 # This file is execfile()d with the current directory set to its
 # containing dir.
 #
@@ -47,6 +44,7 @@ extensions = [
     "sphinx.ext.viewcode",
     "sphinx.ext.napoleon",
     "sphinx.ext.mathjax",
+    "recommonmark",
 ]
 
 autosectionlabel_prefix_document = True
