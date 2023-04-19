@@ -163,7 +163,9 @@ def calc_tornadoinput(
         startreal = int(
             designsummary[designsummary["sensname"] == reference]["startreal1"].iloc[0]
         )
-        endreal = int(designsummary[designsummary["sensname"] == reference]["endreal1"].iloc[0])
+        endreal = int(
+            designsummary[designsummary["sensname"] == reference]["endreal1"].iloc[0]
+        )
         mask = real_mask(dfr_summed, startreal, endreal)
         ref_avg = dfr_summed[mask][response].mean()
     elif reference.isdigit():
